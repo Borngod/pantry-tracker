@@ -1,18 +1,16 @@
-import React, { useState } from 'react';
-import PantryForm from './PantryForm';
-import PantryList from './PantryList';
+import React, { useState } from "react";
+
 
 const App = () => {
   const [items, setItems] = useState([]);
 
   const handleItemDeleted = () => {
-    console.log('Item deleted!');
+    console.log("Item deleted!");
   };
 
   return (
     <div>
-      <PantryForm />
-      <PantryList onItemDeleted={handleItemDeleted} />
+      <p></p>
     </div>
   );
 };
